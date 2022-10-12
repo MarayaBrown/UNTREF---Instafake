@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: rgb(252, 247, 241);
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+}
+
+.card {
+  max-width: 300px;
+  min-width: 280px;
+  background-color: rgb(250, 250, 250);
+  padding: 0.5rem;
+  border: 1px solid rgb(201, 201, 201);
+  box-shadow: 1px 3px 5px rgb(201, 201, 201);
+  border-radius: 0.3rem;
+}
+.card a {
+  color: rgb(53, 52, 52);
+  padding: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.card a:hover {
+  text-shadow: 1px 1px rgb(201, 201, 201);
+}
+.card header {
+  padding: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+  color: rgb(53, 52, 52);
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+.card figure {
+  padding: 0.25rem;
+  height: auto;
+  width: 95%;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+.card figure img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  display: block;
+  object-fit: cover;
+}
+.card footer .button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.card footer .button-wrapper div {
+  display: flex;
+}
+.card footer button {
+  color: rgb(53, 52, 52);
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  display: grid;
+}
+.card footer button:hover {
+  text-shadow: 1px 1px rgb(201, 201, 201);
+  color: rgb(243, 44, 44);
+}
+.card footer p {
+  color: rgb(53, 52, 52);
+  padding: 0.25rem;
+}
+.card footer .comments {
+  color: rgb(77, 76, 76);
+  font-size: 0.9rem;
+  padding: 0.1rem;
+}
+.card footer .time {
+  color: rgb(77, 76, 76);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 0.1rem;
+}
+
+.deck {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 1.2rem;
+  padding: 0 1rem;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 3rem;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(201, 201, 201);
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar .logotipo {
+  display: flex;
+}
+.navbar .logotipo img {
+  height: 10%;
+  width: 10%;
+  padding: 0.25rem;
+}
+.navbar .logotipo h1 {
+  font-size: 2rem;
+  position: 1;
+  padding: 0.25rem;
+}
+.navbar input {
+  border: none;
+  box-shadow: 0px 1px 2px rgb(201, 201, 201);
+  border-radius: 0.3rem;
+  background-color: rgb(252, 247, 241);
+  position: 2;
+}
+.navbar .buttons-nav button {
+  color: rgb(53, 52, 52);
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  display: inline;
+}
+.navbar .buttons-nav button:hover {
+  text-shadow: 1px 1px rgb(201, 201, 201);
+  color: rgb(243, 44, 44);
+}
+@media screen and (max-width: 1024px) {
+  .navbar .buttons-nav .home {
+    display: none;
+  }
+  .navbar .buttons-nav .chat {
+    display: none;
+  }
+  .navbar .buttons-nav .compass {
+    display: none;
+  }
+}/*# sourceMappingURL=Instagram.css.map */

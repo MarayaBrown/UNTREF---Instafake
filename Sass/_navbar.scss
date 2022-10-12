@@ -1,0 +1,56 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    height: 3rem;
+    background-color: $primary;
+    border: 1px solid $border;
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    align-items: center;
+    gap: 1rem;
+    .logotipo{
+        display: flex;
+        img {
+            height: 10%;
+            width: 10%;
+            padding: .25rem;
+        }
+        h1 {
+            font-size: 2rem;
+            position: 1;
+            padding: .25rem;
+        }
+    }
+    input {
+        border: none;
+        box-shadow: 0px 1px 2px $border ;
+        border-radius: .3rem;
+        background-color: $secondary;
+        position: 2;
+    }
+    .buttons-nav{
+        button{
+            color: $text;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            display: inline;
+            &:hover {
+                text-shadow: 1px 1px $border;
+                color: $red;                
+            }
+        }
+        @media screen and (max-width:1024px) {
+            .home {
+                display: none;
+            }
+            .chat {
+                display: none;
+            }
+            .compass {
+                display: none;
+            }
+            
+        }
+    }
+}
